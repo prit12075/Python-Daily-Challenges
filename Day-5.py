@@ -6,15 +6,13 @@ requestList = []
 for i in range(n):
     request = int(input(f"Enter your request {i+1}:- "))
     requestList.append(request)
-requests = []
+
 low_Demand = []
 no_Demand = []
 invalid_Requests = []
 moderate_Demand = []
 high_Demand = []
 valid = 0
-
-requests = [no_Demand, low_Demand, moderate_Demand, high_Demand, invalid_Requests]
 
 for req in requestList:
     if req < 0:
@@ -48,9 +46,31 @@ elif PLI == 1:
     removedRequest = len(high_Demand)
     high_Demand.clear()
 else:
-    removedRequest = len(low_Demand) + len(high_Demand)
+    removedRequest = len(low_Demand) + len(high_Demand) + len(no_Demand) + len(invalid_Requests)
     high_Demand.clear()
     low_Demand.clear()
+    no_Demand.clear()
+    invalid_Requests.clear()
 
 
-print(f"Invalid Re")
+print("\n----- DISPATCH REPORT -----")
+
+print(f"Length of Name (L): {L}")
+print(f"PLI Value: {PLI}")
+
+if PLI == 0:
+    print("Applied Rule: A (Low Demand Removed)")
+elif PLI == 1:
+    print("Applied Rule: B (High Demand Removed)")
+else:
+    print("Applied Rule: C (Only Moderate Demand Kept)")
+
+print(f"\nTotal Valid Requests: {valid}")
+print(f"Total Requests Removed Due to PLI: {removedRequest}")
+
+print("\nFinal Categorized Lists After Filtering:")
+print(f"Low Demand: {low_Demand}")
+print(f"Moderate Demand: {moderate_Demand}")
+print(f"High Demand: {high_Demand}")
+print(f"No Demand: {no_Demand}")
+print(f"Invalid Requests: {invalid_Requests}")
