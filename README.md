@@ -1,4 +1,3 @@
-
 # Python 60 Day Challenge
 
 Welcome to my Python 60 Day Challenge repository! This is a daily log of solved Python programming challenges.
@@ -54,3 +53,46 @@ Each day's solution includes:
 | 4   | [Cyber Activity Risk Analyzer](./Day_4/) | ✅ Complete |
 | 5   | [Emergency Resource Dispatch Analyzer](./Day_5/) | ✅ Complete |
 
+---
+
+## 📖 Concepts Used (Day-wise)
+
+### Day 1 – User Profile Validation System
+- Input handling and string processing
+- Conditional statements for validation checks
+- Basic data validation logic
+- Structured output formatting
+
+### Day 2 – Smart ID & Credential Validator
+- Lists for storing credentials
+- for loops for validation
+- Conditional checks for ID rules
+- Logical filtering and error handling
+
+### Day 3 – Student Performance Analyzer
+- Lists for storing marks
+- for loops for processing data
+- Conditional statements for grade classification
+- Basic performance analysis logic
+- Personalized bonuses based on name length (4-letter bonus)
+- Lucky 7 bonus if roll number contains digit 7
+- Special topper logic for specific name and roll–mark match condition
+
+### Day 4 – Cyber Activity Risk Analyzer
+- Lists for activity logs
+- Loop-based validation
+- Conditional risk categorization (Low/Medium/High)
+- Logical filtering techniques
+- Personalization based on last digit of Register Number (D)
+- If D is even → Removed Low Risk entries
+- If D is odd → Removed Critical Risk entries
+- Counted entries removed due to personalization rule
+
+### Day 5 – Emergency Resource Dispatch Analyzer
+- Lists for categorizing requests
+- for loops for classification
+- Conditional statements for demand levels
+- Counting valid and removed requests
+- Personalized filtering using PLI (L % 3 rule)
+- Calculated L (length of full name excluding spaces)
+- Computed PLI = L % 3 and applied Rule A/B/C accordingly
