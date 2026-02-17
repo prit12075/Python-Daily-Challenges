@@ -9,6 +9,10 @@ Welcome to my Python 60 Day Challenge repository! This is a daily log of solved 
 |-----|-----------|--------|
 | 1   | [User Profile Validation System](./Day_1/) | ✅ Complete |
 | 2   | [Smart ID & Credential Validator](./Day_2/) | ✅ Complete |
+| 3   | [Student Performance Analyzer](./Day_3/) | ✅ Complete |
+| 4   | [Cyber Activity Risk Analyzer](./Day_4/) | ✅ Complete |
+| 5   | [Emergency Resource Dispatch Analyzer](./Day_5/) | ✅ Complete |
+| 6   | Loading... | 🚧 In Progress |
 
 ## 📚 Structure
 
@@ -46,4 +50,7 @@ Each day's solution includes:
 |-----|-----------|--------|
 | 1   | [User Profile Validation System](./Day_1/) | ✅ Complete |
 | 2   | [Smart ID & Credential Validator](./Day_2/) | ✅ Complete |
+| 3   | [Student Performance Analyzer](./Day_3/) | ✅ Complete |
+| 4   | [Cyber Activity Risk Analyzer](./Day_4/) | ✅ Complete |
+| 5   | [Emergency Resource Dispatch Analyzer](./Day_5/) | ✅ Complete |
 
