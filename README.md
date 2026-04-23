@@ -114,15 +114,15 @@ Each day's solution includes:
 - Final risk classification based on combined conditions
 
 ### Day 8 – Multi-Dimensional Academic Intelligence System
-- Data generation using random module with seed
+- Data generation using random module
 - Lists, Tuples, Sets, and Dictionary for structured data storage
 - Pandas DataFrame for tabular data management
-- NumPy for mean, std deviation, max, and correlation computation
-- Manual median calculation (without .describe())
+- NumPy for mean, median, std deviation, max, and correlation computation
+- Manual max calculation without using max()
 - math.log() for performance_index feature engineering
 - performance_index = (marks×0.6 + assignment×0.4) × log(attendance+1)
 - Normalization using min-max scaling
 - Student classification into At Risk / Average / Good / Top Performer
-- List comprehension for filtering above-average performance index
+- List comprehension for normalized marks and calculations
 - Pattern detection: consistency, attendance risk, high achievement
-- Personalization: last digit of register number (8) → 18 students generated
+- Personalization: last digit of register number (8) → 10 students generated
