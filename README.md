@@ -12,6 +12,8 @@ Welcome to my Python 60 Day Challenge repository! This is a daily log of solved 
 | 4   | [Cyber Activity Risk Analyzer](./Day_4/) | ✅ Complete |
 | 5   | [Emergency Resource Dispatch Analyzer](./Day_5/) | ✅ Complete |
 | 6   | [Smart Transaction Risk Detector](./Day_6/) | ✅ Complete |
+| 7   | Day 7 Challenge | ✅ Complete |
+| 8   | [Multi-Dimensional Academic Intelligence System](./Day-8.py) | ✅ Complete |
 
 ## 📚 Structure
 
@@ -54,6 +56,8 @@ Each day's solution includes:
 | 5   | [Emergency Resource Dispatch Analyzer](./Day_5/) | ✅ Complete |
 
 | 6   | [Smart Transaction Risk Detector](./Day_6/) | ✅ Complete |
+| 7   | Day 7 Challenge | ✅ Complete |
+| 8   | [Multi-Dimensional Academic Intelligence System](./Day-8.py) | ✅ Complete |
 
 ---
 
@@ -108,3 +112,17 @@ Each day's solution includes:
 - Aggregation using sum() and len()
 - Multi-condition risk evaluation (frequency, total spending, high-risk count)
 - Final risk classification based on combined conditions
+
+### Day 8 – Multi-Dimensional Academic Intelligence System
+- Data generation using random module with seed
+- Lists, Tuples, Sets, and Dictionary for structured data storage
+- Pandas DataFrame for tabular data management
+- NumPy for mean, std deviation, max, and correlation computation
+- Manual median calculation (without .describe())
+- math.log() for performance_index feature engineering
+- performance_index = (marks×0.6 + assignment×0.4) × log(attendance+1)
+- Normalization using min-max scaling
+- Student classification into At Risk / Average / Good / Top Performer
+- List comprehension for filtering above-average performance index
+- Pattern detection: consistency, attendance risk, high achievement
+- Personalization: last digit of register number (8) → 18 students generated
