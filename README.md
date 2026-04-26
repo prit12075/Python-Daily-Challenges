@@ -4,20 +4,23 @@ Welcome to my Python 60 Day Challenge repository! This is a daily log of solved 
 
 ## 📅 Progress Tracker
 
-| Day | Challenge | Status |
-|-----|-----------|--------|
-| 1   | [User Profile Validation System](./Day_1/) | ✅ Complete |
-| 2   | [Smart ID & Credential Validator](./Day_2/) | ✅ Complete |
-| 3   | [Student Performance Analyzer](./Day_3/) | ✅ Complete |
-| 4   | [Cyber Activity Risk Analyzer](./Day_4/) | ✅ Complete |
-| 5   | [Emergency Resource Dispatch Analyzer](./Day_5/) | ✅ Complete |
-| 6   | [Smart Transaction Risk Detector](./Day_6/) | ✅ Complete |
-| 7   | Day 7 Challenge | ✅ Complete |
-| 8   | [Multi-Dimensional Academic Intelligence System](./Day-8.py) | ✅ Complete |
+|Day|Challenge|Status|
+|---|---|---|
+|1|[User Profile Validation System](./Day_1/)|✅ Complete|
+|2|[Smart ID & Credential Validator](./Day_2/)|✅ Complete|
+|3|[Student Performance Analyzer](./Day_3/)|✅ Complete|
+|4|[Cyber Activity Risk Analyzer](./Day_4/)|✅ Complete|
+|5|[Emergency Resource Dispatch Analyzer](./Day_5/)|✅ Complete|
+|6|[Smart Transaction Risk Detector](./Day_6/)|✅ Complete|
+|7|Day 7 Challenge|✅ Complete|
+|8|[Multi-Dimensional Academic Intelligence System](./Day-8.py)|✅ Complete|
+|9|Day 9 Challenge|✅ Complete|
+|10|[Academic Data Drift & Copy Behavior Analyzer](./Day_10/)|✅ Complete|
 
 ## 📚 Structure
 
 Each day's solution includes:
+
 - **Problem Statement**: Description of the challenge
 - **Solution**: Python code implementation
 - **Concepts**: Key programming concepts used
@@ -47,35 +50,39 @@ Each day's solution includes:
 
 ## 📝 Daily Challenges
 
-| Day | Challenge | Status |
-|-----|-----------|--------|
-| 1   | [User Profile Validation System](./Day_1/) | ✅ Complete |
-| 2   | [Smart ID & Credential Validator](./Day_2/) | ✅ Complete |
-| 3   | [Student Performance Analyzer](./Day_3/) | ✅ Complete |
-| 4   | [Cyber Activity Risk Analyzer](./Day_4/) | ✅ Complete |
-| 5   | [Emergency Resource Dispatch Analyzer](./Day_5/) | ✅ Complete |
-
-| 6   | [Smart Transaction Risk Detector](./Day_6/) | ✅ Complete |
-| 7   | Day 7 Challenge | ✅ Complete |
-| 8   | [Multi-Dimensional Academic Intelligence System](./Day-8.py) | ✅ Complete |
+|Day|Challenge|Status|
+|---|---|---|
+|1|[User Profile Validation System](./Day_1/)|✅ Complete|
+|2|[Smart ID & Credential Validator](./Day_2/)|✅ Complete|
+|3|[Student Performance Analyzer](./Day_3/)|✅ Complete|
+|4|[Cyber Activity Risk Analyzer](./Day_4/)|✅ Complete|
+|5|[Emergency Resource Dispatch Analyzer](./Day_5/)|✅ Complete|
+|6|[Smart Transaction Risk Detector](./Day_6/)|✅ Complete|
+|7|Day 7 Challenge|✅ Complete|
+|8|[Multi-Dimensional Academic Intelligence System](./Day-8.py)|✅ Complete|
+|9|Day 9 Challenge|✅ Complete|
+|10|[Academic Data Drift & Copy Behavior Analyzer](./Day_10/)|✅ Complete|
 
 ---
 
 ## 📖 Concepts Used (Day-wise)
 
 ### Day 1 – User Profile Validation System
+
 - Input handling and string processing
 - Conditional statements for validation checks
 - Basic data validation logic
 - Structured output formatting
 
 ### Day 2 – Smart ID & Credential Validator
+
 - Lists for storing credentials
 - for loops for validation
 - Conditional checks for ID rules
 - Logical filtering and error handling
 
 ### Day 3 – Student Performance Analyzer
+
 - Lists for storing marks
 - for loops for processing data
 - Conditional statements for grade classification
@@ -85,6 +92,7 @@ Each day's solution includes:
 - Special topper logic for specific name and roll–mark match condition
 
 ### Day 4 – Cyber Activity Risk Analyzer
+
 - Lists for activity logs
 - Loop-based validation
 - Conditional risk categorization (Low/Medium/High)
@@ -95,6 +103,7 @@ Each day's solution includes:
 - Counted entries removed due to personalization rule
 
 ### Day 5 – Emergency Resource Dispatch Analyzer
+
 - Lists for categorizing requests
 - for loops for classification
 - Conditional statements for demand levels
@@ -104,6 +113,7 @@ Each day's solution includes:
 - Computed PLI = L % 3 and applied Rule A/B/C accordingly
 
 ### Day 6 – Smart Transaction Risk Detector
+
 - Manual input parsing without using split()
 - Lists for storing transactions
 - Dictionary-based categorization (normal, large, high_risk, invalid)
@@ -114,6 +124,7 @@ Each day's solution includes:
 - Final risk classification based on combined conditions
 
 ### Day 8 – Multi-Dimensional Academic Intelligence System
+
 - Data generation using random module
 - Lists, Tuples, Sets, and Dictionary for structured data storage
 - Pandas DataFrame for tabular data management
@@ -126,3 +137,17 @@ Each day's solution includes:
 - List comprehension for normalized marks and calculations
 - Pattern detection: consistency, attendance risk, high achievement
 - Personalization: last digit of register number (8) → 10 students generated
+
+### Day 10 – Academic Data Drift & Copy Behavior Analyzer
+
+- Random student academic data generation using random module
+- Nested data structure using list of dictionaries
+- Pandas DataFrame conversion for tabular analysis
+- NumPy for mean, median, standard deviation, and normalization
+- math.sqrt() based marks transformation
+- Shallow copy vs deep copy using copy module
+- Minimum four user-defined functions for modular design
+- Data drift detection using mean difference
+- Classification into Stable Data / Minor Drift / Critical Drift / Copy Failure Detected
+- Manual metric calculation without NumPy
+- Personalization: register number ending with 8 → mutate indexes divisible by 2
