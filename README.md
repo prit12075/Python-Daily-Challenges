@@ -14,8 +14,8 @@ Welcome to my Python 60 Day Challenge repository! This is a daily log of solved 
 |6|[Smart Transaction Risk Detector](./Day_6/)|✅ Complete|
 |7|Day 7 Challenge|✅ Complete|
 |8|[Multi-Dimensional Academic Intelligence System](./Day-8.py)|✅ Complete|
-|9|Day 9 Challenge|✅ Complete|
-|10|[Academic Data Drift &amp; Copy Behavior Analyzer](./Day_10/)|✅ Complete|
+|9|[Smart Inventory Mutation Tracker](./Day_9/)|✅ Complete|
+|10|[Smart Academic Data Drift Tracker](./Day_10/)|✅ Complete|
 
 ## 📚 Structure
 
@@ -60,7 +60,8 @@ Each day's solution includes:
 |6|[Smart Transaction Risk Detector](./Day_6/)|✅ Complete|
 |7|Day 7 Challenge|✅ Complete|
 |8|[Multi-Dimensional Academic Intelligence System](./Day-8.py)|✅ Complete|
-|10|[Academic Data Drift &amp; Copy Behavior Analyzer](./Day_10/)|✅ Complete|
+|9|[Smart Inventory Mutation Tracker](./Day_9/)|✅ Complete|
+|10|[Smart Academic Data Drift Tracker](./Day_10/)|✅ Complete|
 
 ---
 
@@ -122,6 +123,7 @@ Each day's solution includes:
 - Multi-condition risk evaluation (frequency, total spending, high-risk count)
 - Final risk classification based on combined conditions
 
+
 ### Day 8 – Multi-Dimensional Academic Intelligence System
 
 - Data generation using random module
@@ -137,7 +139,20 @@ Each day's solution includes:
 - Pattern detection: consistency, attendance risk, high achievement
 - Personalization: last digit of register number (8) → 10 students generated
 
-### Day 10 – Academic Data Drift &amp; Copy Behavior Analyzer
+### Day 9 – Smart Inventory Mutation Tracker
+
+- Inventory stored using list of dictionaries with nested details
+- Functions for creation, mutation, and comparison
+- Shallow copy and deep copy using copy module
+- Price discount mutation and stock updates
+- Loops and conditional statements for comparison logic
+- Detection of changed and unchanged items
+- Tuple summary output for inventory comparison
+- Added nested supplier rating field
+- Personalization: register number ending with 8, inventory length 3 → modified index 2
+- Demonstrated why shallow copy affects original nested data while deep copy remains independent
+
+### Day 10 – Smart Academic Data Drift Tracker
 
 - Random student academic data generation using random module
 - Nested data structure using list of dictionaries

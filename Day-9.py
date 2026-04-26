@@ -1,83 +1,59 @@
-import random
-import pandas as pd
-import numpy as np
-import math
 import copy
 
-def generate_students(n):
-    data = []
-    for i in range(1, n + 1):
-        student = {
-            "id": i,
-            "marks": random.randint(40, 95),
-            "attendance": random.randint(60, 100),
-            "scores": [random.randint(10, 25), random.randint(10, 25)]
+def create_inventory():
+    return [
+        {
+            "item": "Laptop",
+            "details": {"price": 50000, "stock": 10, "rating": 4.5}
+        },
+        {
+            "item": "Phone",
+            "details": {"price": 20000, "stock": 25, "rating": 4.2}
+        },
+        {
+            "item": "Tablet",
+            "details": {"price": 30000, "stock": 15, "rating": 4.0}
         }
-        data.append(student)
-    return data
+    ]
 
-def mutate_data(data):
-    for i in range(len(data)):
-        if i % 2 == 0:   # Personalized rule for reg no ending 8
-            data[i]["marks"] += int(math.sqrt(data[i]["marks"]))
-            data[i]["scores"][0] += 5
-            data[i]["attendance"] -= 3
+def apply_discount(data, index):
+    data[index]["details"]["price"] *= 0.9
+    data[index]["details"]["stock"] += 5
 
-def analyze(data):
-    marks = np.array([x["marks"] for x in data])
+def compare_data(original, modified):
+    changed = 0
+    unchanged = 0
 
-    mean = np.mean(marks)
-    median = np.median(marks)
-    std = np.std(marks)
+    for i in range(len(original)):
+        if original[i] == modified[i]:
+            unchanged += 1
+        else:
+            changed += 1
 
-    manual_mean = sum(marks) / len(marks)
+    return (changed, unchanged)
 
-    normalized = (marks - mean) / std
+inventory = create_inventory()
 
-    return mean, median, std, manual_mean, normalized
+index = 8 % len(inventory)   # Personalization Rule
 
-def classify(drift, original, shallow):
-    if original != shallow:
-        return "Copy Failure Detected"
-    elif drift < 2:
-        return "Stable Data"
-    elif drift < 5:
-        return "Minor Drift"
-    else:
-        return "Critical Drift"
+shallow = copy.copy(inventory)
+deep = copy.deepcopy(inventory)
 
-students = generate_students(10)
+apply_discount(shallow, index)
+apply_discount(deep, index)
 
-shallow = copy.copy(students)
-deep = copy.deepcopy(students)
+print("Original Inventory:")
+print(inventory)
 
-mutate_data(shallow)
-mutate_data(deep)
+print("\nShallow Copy:")
+print(shallow)
 
-df_original = pd.DataFrame(students)
-df_shallow = pd.DataFrame(shallow)
-df_deep = pd.DataFrame(deep)
+print("\nDeep Copy:")
+print(deep)
 
-orig_mean = analyze(students)[0]
-deep_mean = analyze(deep)[0]
-std_dev = analyze(deep)[2]
-
-drift = abs(orig_mean - deep_mean)
-
-result = classify(drift, students, shallow)
-
-print("ORIGINAL DATA")
-print(df_original)
-
-print("\nSHALLOW COPY")
-print(df_shallow)
-
-print("\nDEEP COPY")
-print(df_deep)
-
-print("\nDrift Value =", drift)
-print("Tuple =", (deep_mean, drift, std_dev))
-print("Final Classification =", result)
+print("\nShallow Summary:", compare_data(inventory, shallow))
+print("Deep Summary:", compare_data(inventory, deep))
 
 print("\nExplanation:")
-print("Shallow copy shares nested objects, so modifying scores also changes original data.")
+print("Shallow copy shares nested dictionaries with original data.")
+print("Deep copy creates fully independent nested objects.")
