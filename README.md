@@ -15,7 +15,7 @@ Welcome to my Python 60 Day Challenge repository! This is a daily log of solved 
 |7|Day 7 Challenge|✅ Complete|
 |8|[Multi-Dimensional Academic Intelligence System](./Day-8.py)|✅ Complete|
 |9|Day 9 Challenge|✅ Complete|
-|10|[Academic Data Drift & Copy Behavior Analyzer](./Day_10/)|✅ Complete|
+|10|[Academic Data Drift &amp; Copy Behavior Analyzer](./Day_10/)|✅ Complete|
 
 ## 📚 Structure
 
@@ -60,8 +60,7 @@ Each day's solution includes:
 |6|[Smart Transaction Risk Detector](./Day_6/)|✅ Complete|
 |7|Day 7 Challenge|✅ Complete|
 |8|[Multi-Dimensional Academic Intelligence System](./Day-8.py)|✅ Complete|
-|9|Day 9 Challenge|✅ Complete|
-|10|[Academic Data Drift & Copy Behavior Analyzer](./Day_10/)|✅ Complete|
+|10|[Academic Data Drift &amp; Copy Behavior Analyzer](./Day_10/)|✅ Complete|
 
 ---
 
@@ -138,7 +137,7 @@ Each day's solution includes:
 - Pattern detection: consistency, attendance risk, high achievement
 - Personalization: last digit of register number (8) → 10 students generated
 
-### Day 10 – Academic Data Drift & Copy Behavior Analyzer
+### Day 10 – Academic Data Drift &amp; Copy Behavior Analyzer
 
 - Random student academic data generation using random module
 - Nested data structure using list of dictionaries
